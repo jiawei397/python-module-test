@@ -29,4 +29,14 @@ linux下: 修改 ~/.pip/pip.conf （如果没有自己创建一个）， 内容�
 
     python -m pip install twine
     $ https://pypi.org/manage/projects/
+
+可以配置到$HOME/.pypirc文件中，就不用多次输入了
+
+    [pypi]
+    username = <username>
+    password = <password>
+
+
+再使用twine发布到服务器：
+
     twine upload dist/*
